@@ -14,4 +14,21 @@ class Supplier extends Model
         'email',
         'phone',
     ];
+
+    //Relación uno a muchos inversa
+    public function identity()
+    {
+        return $this->belongsTo(Identity::class);
+    }
+
+    //Relación uno a muchos
+    public function purchaseOrders()
+    {
+        return $this->hasMany(PurchaseOrder::class);
+    }
+
+    public function purchases()
+    {
+        return $this->hasMany(Purchase::class);
+    }
 }
