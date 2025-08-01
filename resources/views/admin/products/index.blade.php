@@ -1,24 +1,34 @@
 <x-admin-layout
-title="Categorias | Codersfree"
+title=" Productos | JustHack"
 :breadcrumbs="[
     [
         'name' => 'Dashboard',
         'href' => route('admin.dashboard'),
     ],
     [
-        'name' => 'Categorias',
+        'name' => 'Productos',
     ],
 ]">
 
+    @push('css')
+        <style>
+            table th  span, table td{
+                font-size: 0.75rem !important;
+            }
+        </style>
+    @endpush
+
+
 <x-slot name="action">
     
-    <x-wire-button href="{{route('admin.categories.create')}}" blue>
+    <x-wire-button href="{{route('admin.products.create')}}" blue>
         Nuevo
     </x-wire-button>
 
 </x-slot>
 
-@livewire('admin.datatables.category-table')
+@livewire('admin.datatables.product-table')
+
 
 @push('js')
 

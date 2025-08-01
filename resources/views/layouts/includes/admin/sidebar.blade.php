@@ -12,6 +12,12 @@
             'href' => route('admin.categories.index'),
             'active' => request()->routeIs('admin.dashboard.*'),
         ],
+        [
+            'name' => 'Productos',
+            'icon' => 'fa-solid fa-box',
+            'href' => route('admin.products.index'),
+            'active' => request()->routeIs('admin.products.*'),
+        ],
     ];
 @endphp
 

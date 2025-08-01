@@ -1,6 +1,11 @@
+@import 'dropzone/dist/dropzone.css';
 @import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";
 @source "../../node_modules/flowbite";
+
+
+/* Tus otros estilos personalizados aquí */
+
 
 @tailwind base;
 @tailwind components;
